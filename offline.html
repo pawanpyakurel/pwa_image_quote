@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PWA Image Quote</title>
+    <style type="text/css">
+      html {
+        height: 100%;
+        font-size: 62.5%;
+      }
+      body {
+        box-sizing: border-box;
+        font-weight: 400 !important;
+        font-size: 1.6rem !important;
+        line-height: 1.7 !important;
+        background: linear-gradient(
+          to right,
+          #e800ff 0%,
+          #e800ff 50%,
+          #0000ff 50%,
+          #0000ff 100%
+        );
+      }
+
+      .CardWrapper {
+        margin: 0rem;
+        padding: 0rem;
+        width: auto;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .CardImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('images/background1.jpeg');
+        height: 60rem;
+        width: 100rem;
+        background-size: cover;
+        background-position: center;
+        border-radius: 2rem;
+        box-shadow: 0rem 0rem 3rem #000000;
+      }
+      .QuoteWrapper {
+        margin: 0rem;
+        padding: 2rem 0;
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: #ebebeb;
+        width: 100%;
+        max-width: 50rem;
+        z-index: 1;
+        align-self: center;
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+        text-align: center;
+      }
+      .QuoteWrapper:after {
+        position: absolute;
+        content: '”';
+        color: rgba(255, 255, 255, 1);
+        font-size: 10rem;
+        line-height: 0;
+        bottom: -26px;
+        right: 0px;
+        text-shadow: 0px 0px 3px black;
+      }
+      h1 {
+        position: relative;
+        color: #ebebeb;
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1;
+        margin: 0;
+        text-shadow: 0px 0px 3px black;
+
+        @media all and (min-width: 600px) {
+          font-size: 4rem;
+        }
+      }
+
+      h4 {
+        text-align: right;
+        text-transform: capitalize;
+        position: relative;
+        color: #b4f6e7;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1;
+        margin: 0;
+        padding-top: 20px;
+        z-index: 1;
+        text-shadow: 0px 0px 3px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="CardWrapper">
+      <div class="CardImage">
+        <div class="QuoteWrapper">
+          <h1>
+            The greatest glory in living lies not in never falling, but in
+            rising every time we fall.
+          </h1>
+          <h4>&mdash; Nelson Mandela</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
