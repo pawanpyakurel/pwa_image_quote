@@ -7,8 +7,6 @@ import axios from 'axios';
 const API_URL = process.env.REACT_APP_BASE_URL;
 axios.defaults.baseURL = API_URL;
 
-// console.log(API_URL, 'image url of api');
-
 //getting the Random Image
 const getRandomImage = () => axios.get(`random.json`);
 
