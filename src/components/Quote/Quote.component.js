@@ -1,14 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 //styles
 import { QuoteWrapper } from './Quote.styles';
-const Quote = () => {
+const Quote = ({ author, quote }) => {
   return (
     <QuoteWrapper>
-      <h1>Success doesn’t just find you. You have to go out and get it.</h1>
-      <h4>&mdash; pawan pyakurel </h4>
+      <h1>{quote}</h1>
+      <h4>&mdash; {author}</h4>
     </QuoteWrapper>
   );
+};
+
+Quote.propQuoteTypes = {
+  author: PropTypes.string,
+  quote: PropTypes.string,
 };
 
 export default Quote;

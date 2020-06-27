@@ -12,7 +12,6 @@ const CardWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
     background: url(${(props) => props.bg});
     height: 60rem;
     width: 100rem;
