@@ -14,6 +14,7 @@ const initialState = {
 };
 
 export const randomImages = (state = initialState, action) => {
+  console.log(action, 'action in reducer');
   switch (action.type) {
     case GET_RANDOM_IMAGE_REQUEST:
       return {

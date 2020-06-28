@@ -3,7 +3,7 @@ import axios from 'axios';
 // https://picsum.photos/seed/picsum/1000/600
 //quote url = "http://quotes.stormconsultancy.co.uk/random.json"
 
-//Image base url
+// Image base url
 const API_URL = process.env.REACT_APP_BASE_URL;
 axios.defaults.baseURL = API_URL;
 

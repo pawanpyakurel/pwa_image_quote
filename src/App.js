@@ -44,6 +44,8 @@ const App = (props) => {
       setisLoadQuote(false);
     }
   };
+  console.log(props.imageQuote, 'imageQuote');
+
   return (
     <>
       <GlobalStyle />
